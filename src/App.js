@@ -1,6 +1,10 @@
 
 import './App.css';
+import Add from './components/Add';
+import Delete from './components/Delete';
 import Home from './components/Home';
+import Search from './components/Search';
+import View from './components/View';
 
 function App() {
   return (
