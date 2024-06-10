@@ -18,7 +18,7 @@ const Search = () => {
         axios.post("",data).then(
             (response) => {
                 console.log(response.data)
-                if (response.data.status=="success") {
+                if (response.data.status == "success") {
                     alert("Successfully Added")
                 } else {
                     alert("Error")
