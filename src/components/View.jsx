@@ -3,19 +3,10 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 
 const View = () => {
-    const[data,changeData]=useState(
-        [
-            {
-                "ecode":"101",
-        "name":"Safa",
-        "designation":"Developer",
-        "salary":"25000"
-            }
-        ]
-    )
+    const[data,changeData]=useState([])
 
     const fetchData= () => {
-        axios.get("").then((response)=>
+        axios.get("http://localhost:8080/view").then((response)=>
             {
                 console.log(response.data)
                 changeData(response.data)
